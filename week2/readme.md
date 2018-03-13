@@ -1,1 +1,2 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+In this week, I learnt how to add numbers in python and make a string into uppercase, and also follow some symbols.Then it is clear that the difference between if, elif and else. however, its hard to research the knowledge in exercise 3 and remember, I'm also not sure with what [arg] is. 

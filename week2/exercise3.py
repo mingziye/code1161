@@ -7,7 +7,7 @@ def is_odd(a_number):
 
     Look into modulo division using the '%' operator as one way of doing this.
     """
-    pass
+    return a_number % 2 == 1
 
 
 def fix_it(moves=True, should_move=True):
@@ -21,7 +21,17 @@ def fix_it(moves=True, should_move=True):
     "Duct Tape"
     "No Problem"
     """
-    pass
+    
+    if moves is True:
+        if should_move is True:
+            return "No Problem"
+        else:
+            return "Duct Tape"
+    else:
+        if should_move is True:
+            return "WD-40"
+        else:
+            return "No Problem"
 
 
 def loops_1a():
@@ -31,7 +41,10 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    pass
+    returnlist = []
+    for i in range (1,11):
+        returnlist.append ("*")
+    return (returnlist)
 
 
 
@@ -43,7 +56,10 @@ def loops_1c(number_of_items=5, symbol="#"):
     a string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    pass
+    returnlist = []
+    for i in range(number_of_items):
+        returnlist.append(symbol)
+    return (returnlist)
 
 
 def loops_2():
@@ -64,8 +80,17 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    pass
 
+
+    ''' initialize the two dimentaional array list'''
+    returnlist = []
+    for i in range(0, 10):
+        tmp = []
+        for j in range(0, 10):
+            tmp.append("*")
+        returnlist.append(tmp)
+
+    return (returnlist)
 
 def loops_3():
     """Make a rising block of numbers.
@@ -88,7 +113,13 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    pass
+    returnlist = []
+    for i in range(0, 10):
+        tmp = []
+        for j in range(0, 10):
+            tmp.append(str(i))
+        returnlist.append(tmp)
+    return returnlist
 
 
 def loops_4():
@@ -108,7 +139,13 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    pass
+    returnlist = []
+    for i in range(0, 10):
+        tmp = []
+        for j in range(0, 10):
+            tmp.append(str(j))
+        returnlist.append(tmp)
+    return returnlist
 
 
 def loops_5():
@@ -133,7 +170,13 @@ def loops_5():
         "There are {} green bottles".format(8)
     you'll come to see the pros and cons of each over time.
     """
-    pass
+    returnlist = []
+    for i in range(0, 10):
+        tmp = []
+        for j in range(0, 5):
+            tmp.append("(i" + str(i) + ", j" + str(j) + ")")
+        returnlist.append(tmp)
+    return returnlist
 
 
 def loops_6():
@@ -156,7 +199,13 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    pass
+    returnlist = []
+    for i in range(0, 10):
+        tmp = []
+        for j in range(0, i + 1):
+            tmp.append(str(j))
+        returnlist.append(tmp)
+    return returnlist
 
 
 def loops_7():
@@ -176,11 +225,29 @@ def loops_7():
         * * * * *
       * * * * * * *
     * * * * * * * * *
+
+
+    1234*6789    line1->5
+    123***789    line2->456
+    12*****89    line3->34567
+    1*******9    line4->2345678
     (this is what will print when you test from inside this file)
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    pass
+    returnlist = []
+    for i in range(0, 5):
+        tmp = []
+        for j in range(0, 9):
+            tmp.append("*")
+            if i + j < 4:
+                tmp[j] = " "
+            asterisk = i+4
+            if j > asterisk:
+                tmp[j] = " "
+        returnlist.append(tmp)
+
+    return (returnlist)
 
 
 def lp(some_kind_of_list, exercise_name):
@@ -189,7 +256,6 @@ def lp(some_kind_of_list, exercise_name):
     This is a helper function that prints your
     results to check that they are tidy.
     Note: You don't have to do anything with it.
-    """
     if some_kind_of_list is not None:
         print("\n" + exercise_name)
         if type(some_kind_of_list[0]) is list:
@@ -223,4 +289,4 @@ if __name__ == "__main__":
     lp(loops_4(), "loops_4")
     lp(loops_5(), "loops_5")
     lp(loops_6(), "loops_6")
-    lp(loops_7(), "loops_7")
+    lp(loops_7(), "loops_7"）"""
