@@ -28,7 +28,39 @@ def binary_search(low, high, actual_number):
       tests aren't that smart yet.)
     """
 
-    return {"guess": guess, "tries": tries}
+    tries = 1
+    guess = actual_number
+    found = False
+
+    start = low 
+    end = high - 1
+    while start >= end:
+      return False
+    while start <= end:
+      mid= int(( start + end ) / 2)
+      if (guess == mid) or (guess == start) or (guess == end):
+        print("got [{}] by [{}] times".format(guess,tries))
+        return {"guess": guess, "tries": tries}
+        break
+      elif mid < guess:
+        start = mid + 1
+        end = end -1
+      else:
+        end = mid - 1
+      tries = tries + 1
+    return -1
+
+
+
+
+
+
+
+
+    
+    
+
+
 
 
 if __name__ == "__main__":

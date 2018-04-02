@@ -1,1 +1,4 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+In this week, I found some methods to get different mathods using ranges, and also learnt how to creat a binary search. it is quite hard to understand how to begin, but it becomes fine after understanding what I need to do, it's a shame to understand the whole week 3 things to late as it quite like a skip comparing to previous week to me (may be because I'm stupid). however, it is cool to have a hangman as a great example of many knowledge althouth it also needs to spent time to analyse many steps why using these loops or how can make one without the example. 
+
+However, I'm still not clear with those guessing game, when I should break the function or continue. or why I need to do them.  actually I'm the one who full of messy questions but I don't know where to find the point of question to ask. I will try my best at hoiday trying to work on them as best as I can.
