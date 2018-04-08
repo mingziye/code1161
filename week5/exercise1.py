@@ -191,11 +191,7 @@ def wordy_pyramid():
 
 
 def get_a_word_of_length_n(length):
-   import requests
-   word_list = []
-   for i in range(n,-1)
-       word_list.append(i)
-       return i
+    pass
 
 def list_of_words_with_lengths(list_of_lengths):
     pass
