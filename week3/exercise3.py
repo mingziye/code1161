@@ -50,7 +50,7 @@ while True:
             if int(y)>int(x):
               break
             else:
-              y=input("The number should bigger than the low bound, set again: ")
+              y=input("The number should bigger than the low bound, try again: ")
         break
     except ValueError:
         y=input('Set a higher bound again: ')

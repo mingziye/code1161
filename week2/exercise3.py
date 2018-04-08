@@ -57,8 +57,8 @@ def loops_1c(number_of_items=5, symbol="#"):
     E.g.: ['#', '#', '#', '#', '#']
     """
     returnlist = []
-    for i in range(number_of_items):
-        returnlist.append(symbol)
+    for i in range(10,1):
+        returnlist.append(i)
     return (returnlist)
 
 
