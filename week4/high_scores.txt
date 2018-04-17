@@ -1,1 +1,1 @@
-[{"name": "mindy", "time_taken": 59.11495566368103, "percentage": 0.4}, {"name": "mindy", "time_taken": 117.4418408870697, "percentage": 0.8}]
+[{"name": "mindy", "time_taken": 59.11495566368103, "percentage": 0.4}, {"name": "mindy", "time_taken": 117.4418408870697, "percentage": 0.8}, {"name": "mindy", "time_taken": 21.88619303703308, "percentage": 0.4}, {"name": "mindy", "time_taken": 2520.4739129543304, "percentage": 0.16666666666666666}, {"name": "mindy", "time_taken": 2535.5766909122467, "percentage": 0.0}]

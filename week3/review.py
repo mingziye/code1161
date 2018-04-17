@@ -12,21 +12,18 @@ def loop_ranger(start, stop=None, step=1):
 
     Do this using any method apart from just using range()
     """ 
-    list1 = []
+    returnlist = []
     while start < stop:
-        list1.append(start)
+        returnlist.append(start)
         start = start + step
-    return list1
+    return returnlist
 
 def lone_ranger(start, stop, step):
     """Duplicate the functionality of range.
 
     Look up the docs for range() and wrap it in a 1:1 way
     """
-    list1 = []
-    for i in range(start, stop, step):
-        list1.append(i)
-    return list1
+    return (list(range(start,stop,step)))
 
 
 
@@ -36,16 +33,16 @@ def two_step_ranger(start, stop):
     Sometimes you want to hide complexity.
     Make a range function that always has a step size of 2
     """
-    return (list(range(start,stop,2))
-   
-
+    return (list(range(start,stop,2)))
 
 """def gene_krupa_range(start, stop, even_step, odd_step):
     Make a range that has two step sizes.
 
     make a list that instead of having evenly spaced steps
-    has odd steps be one size and even steps be another."""
-    """return list(range(start, stop)"""
+    has odd steps be one size and even steps be another.
+    """
+"""return list(range(start, stop)"""
+
 
 def stubborn_asker(low, high):
     """Ask for a number between low and high until actually given one.
@@ -54,13 +51,14 @@ def stubborn_asker(low, high):
     until you get a number that you think is OK
     """
     while 1:
-        x = int(input())
-        if low<=x<=high:
-            print(f"retry the correct number{x}")
-            return x
-        else:
-            print(f"please enter a number between {low} and {high}")
-
+        try:
+            x = int(input())
+            if low<=x<=high:
+                print("retry the correct number")
+                return x
+            else:
+                print(f"please guess a number between {low} and {high}")
+        
 def not_number_rejector(message):
     """Ask for a number repeatedly until actually given one.
 
@@ -68,15 +66,15 @@ def not_number_rejector(message):
     "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
-    tmp = ""
-    while 1:
-        try:
+    tmp = ''
+     while 1:
+        try：
             tmp = input(message)
-            x = int(tmp)
-            print(" [{}] is a number".format(x))
-            return x
+            if tmp = int(tmp)
+                return tmp
         except:
-            print("[{}] is not a number, retry".format(tmp))
+            print("please enter a number")
+        
 
 def super_asker(low, high):
     """Robust asking function.
@@ -84,17 +82,21 @@ def super_asker(low, high):
     Combine stubborn_asker and not_number_rejector to make a function
     that does it all!
     """
-    tmp = ""
+    x = ''
+    actual_number = random.randict(low,high)
     while 1:
         try:
-            x = int(input())
-            print("please retry the correct number [{}]".format(x))
+             x = int(input())
+             print("guess another one.")
             if low<=x<=high:
-                return x
-            else:
-                print("please enter a number between [{}-{}]".format(low, high))
+                print ("retry the other number.")
+            elif:
+                print(f"please enter a number between {low} and {high}")
+                
         except:
-            print("[{}] is not a number, retry.".format(tmp))
+            print("please enter a number")
+
+
 
 
 
