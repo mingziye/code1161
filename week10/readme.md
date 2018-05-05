@@ -1,0 +1,3 @@
+TODO: Reflect on what you learned this week and what is still unclear.
+
+in this week, I just find the dataset that I interested in, I thought i wanted to find something relate to the wanting of pirates in One Piece, but in the half way of my search, I found something relate to avengers. so I choosed that to be my dataset, but I haven't download it, but I guess I don't know how to make it run. just guess, I'll try my best.
